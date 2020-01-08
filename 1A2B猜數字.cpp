@@ -63,11 +63,15 @@ int main()
         int a = checkA(player, AI, SIZE);
         int b = checkB(player, AI, SIZE);
         
-        if(a==SIZE && b==0)
+        if(a==SIZE)
+        {
             run = true;
+            cout << a << "A" << endl;
+        } 
+        else
+            cout << a << "A" << b << "B" << endl;
         step++;
         
-        cout << a << "A" << b << "B" << endl;
     }
     cout << "Aha!!I find out!!" << endl;
     cout << "I spend " << step << "step" << endl;
