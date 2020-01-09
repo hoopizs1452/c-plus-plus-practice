@@ -34,7 +34,7 @@ int main()
 {
     int player[SIZE] = {};
     int AI[SIZE] = {};
-    int run = false;
+    // int run = false;
     int step = 0;
     cout << "請輸入" << SIZE << "個數字:";
     for(int i=0; i<SIZE; i++)
@@ -47,7 +47,7 @@ int main()
         cout << player[i];
     }
     cout << endl;
-    while (run != true)
+    while (1)
     {
         srand(time(0));
         for(int i=0; i<SIZE; i++)
@@ -65,8 +65,9 @@ int main()
         
         if(a==SIZE)
         {
-            run = true;
+            //run = true;
             cout << a << "A" << endl;
+            break;
         } 
         else
             cout << a << "A" << b << "B" << endl;
