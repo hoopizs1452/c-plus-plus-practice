@@ -34,22 +34,21 @@ int main()
 {
     int player[SIZE] = {};
     int AI[SIZE] = {};
-    // int run = false;
     int step = 0;
     cout << "請輸入" << SIZE << "個數字:";
     for(int i=0; i<SIZE; i++)
     {
         cin >> player[i];
     }
-    cout << "你輸入的數字:" << endl;
+    cout << "你輸入的數字:";
     for(int i=0; i<SIZE; i++)
     {
         cout << player[i];
     }
     cout << endl;
+    srand(time(0));
     while (1)
     {
-        srand(time(0));
         for(int i=0; i<SIZE; i++)
         {
             AI[i] = rand() % 10;
@@ -65,7 +64,6 @@ int main()
         
         if(a==SIZE)
         {
-            //run = true;
             cout << a << "A" << endl;
             break;
         } 
