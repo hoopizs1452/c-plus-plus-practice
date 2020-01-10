@@ -16,7 +16,7 @@ int main()
     cout << "請輸入動物的個數:";
     cin >> n;
 
-    cout << "請輸入動物的位置座標:";
+    cout << "請輸入動物的位置座標:" << endl;
     for(i =0; i<n; i++)
     {
         cin >> x >> y;
