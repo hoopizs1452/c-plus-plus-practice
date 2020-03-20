@@ -6,7 +6,7 @@ class TemperatureConversion
 {
 public:
 	int fahrenheit;
-	TemperatureConversion(int);
+	TemperatureConversion(int = 0);
 	double getAnswer();
 };
 
